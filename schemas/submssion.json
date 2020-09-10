@@ -1,0 +1,117 @@
+{
+    "default": {},
+    "description": "The submission JSON schema",
+    "examples": [
+        {
+            "company": "Vimeo",
+            "title": "Back-End Engineer, Live/Video",
+            "jobDescription": "Vimeo's Video Platform team is responsible for the systems and services that upload, transcode, and deliver billions of plays and hundreds of petabytes of on-demand and live videos. As a member of the Video Platform team, you’ll work closely with the other team members to ensure the video (VOD & Live) infrastructure is always up and running, write APIs to interface with other systems, and work with other teams to improve the end-users experience. We own the services we write, which means following the best practices when it comes to writing code, writing tests, and ensuring the apps are properly instrumented.\n\n\nWhat you’ll do: \n\nDesign, develop and maintain Vimeo’s video upload, transcoding and live infrastructures (from ingest to playback). \nWork with the team to build frameworks to simplify deployment and testing.\nDeliver innovative video solutions in collaboration with Video Encoding, Player and other Product Engineering teams \nArchitect scalable, observable systems in collaboration with Cloud and CDN providers to deliver high quality user experience.\nEvaluate and propose new solutions to improve performance and cost.\n\nSkills and knowledge you should possess:\n\n4+ years of experience programming for distributed systems.\nExperience designing and implementing scalable systems in the cloud.\nExperience with containers (e.g. Docker) and orchestration (e.g. Kubernetes).\nWrite high-quality code, tests and make sure your services are monitored.\n\nBonus points:\n\nExperience with Go.\nExperience working with video technologies (ffmpeg, HLS, Dash, etc.).\nExperience with Google Cloud.\nExperience with Infrastructure as Code (Terraform).",
+            "url": "https://www.linkedin.com/jobs/view/1954661245/",
+            "recruiterName": "Harrison Shafran",
+            "descriptionSource": "LinkedIn",
+            "createdDate": "08/03/2020",
+            "addedDate": "08/04/2020",
+            "submissionDate": "08/07/2020",
+            "status": "submitted.declined"
+        }
+    ],
+    "required": [
+        "company",
+        "title",
+        "jobDescription",
+        "descriptionSource",
+        "addedDate",
+        "submissionDate",
+        "status"
+    ],
+    "title": "The root schema",
+    "properties": {
+        "company": {
+            "default": "",
+            "description": "The company creating the job description.",
+            "examples": [
+                "Vimeo"
+            ],
+            "title": "The company schema"
+        },
+        "title": {
+            "default": "",
+            "description": "The job title",
+            "examples": [
+                "Back-End Engineer, Live/Video"
+            ],
+            "title": "The title schema"
+        },
+        "jobDescription": {
+            "default": "",
+            "description": "The job description",
+            "examples": [
+                "Vimeo's Video Platform team is responsible for the systems and services that upload, transcode, and deliver billions of plays and hundreds of petabytes of on-demand and live videos. As a member of the Video Platform team, you’ll work closely with the other team members to ensure the video (VOD & Live) infrastructure is always up and running, write APIs to interface with other systems, and work with other teams to improve the end-users experience. We own the services we write, which means following the best practices when it comes to writing code, writing tests, and ensuring the apps are properly instrumented.\n\n\nWhat you’ll do: \n\nDesign, develop and maintain Vimeo’s video upload, transcoding and live infrastructures (from ingest to playback). \nWork with the team to build frameworks to simplify deployment and testing.\nDeliver innovative video solutions in collaboration with Video Encoding, Player and other Product Engineering teams \nArchitect scalable, observable systems in collaboration with Cloud and CDN providers to deliver high quality user experience.\nEvaluate and propose new solutions to improve performance and cost.\n\nSkills and knowledge you should possess:\n\n4+ years of experience programming for distributed systems.\nExperience designing and implementing scalable systems in the cloud.\nExperience with containers (e.g. Docker) and orchestration (e.g. Kubernetes).\nWrite high-quality code, tests and make sure your services are monitored.\n\nBonus points:\n\nExperience with Go.\nExperience working with video technologies (ffmpeg, HLS, Dash, etc.).\nExperience with Google Cloud.\nExperience with Infrastructure as Code (Terraform)."
+            ],
+            "title": "The jobDescription schema"
+        },
+        "url": {
+            "default": "",
+            "description": "The URL linking to the job description.",
+            "examples": [
+                "https://www.linkedin.com/jobs/view/1954661245/"
+            ],
+            "title": "The url schema"
+        },
+        "recruiterName": {
+            "default": "",
+            "description": "The name of the recruiter associated with the job descripition (if available)",
+            "examples": [
+                "Harrison Shafran"
+            ],
+            "title": "The recruiterName schema"
+        },
+        "descriptionSource": {
+            "default": "",
+            "description": "The source where the job description was found",
+            "examples": [
+                "LinkedIn"
+            ],
+            "title": "The descriptionSource schema"
+        },
+        "createdDate": {
+            "default": "",
+            "description": "The date the job description was created (MM/DD/YYYY)",
+            "examples": [
+                "08/03/2020"
+            ],
+            "title": "The createdDate schema"
+        },
+        "addedDate": {
+            "default": "",
+            "description": "The date the job description was added to the database (MM/DD/YYYY)",
+            "examples": [
+                "08/04/2020"
+            ],
+            "title": "The addedDate schema"
+        },
+        "submissionDate": {
+            "default": "",
+            "description": "The date the application was submitted to the company (MM/DD/YYY)",
+            "examples": [
+                "08/07/2020"
+            ],
+            "title": "The submissionDate schema"
+        },
+        "status": {
+            "default": "",
+            "description": "The status of the submission",
+            "examples": [
+                "submitted.declined"
+            ],
+            "title": "The status schema",
+            "enum": [
+                "submitted.awaitingReply",
+                "submitted.declined",
+                "submitted.recruiterContacted",
+                "submitted.phoneScreenScheduled"
+            ]
+        }
+    },
+    "additionalProperties": true
+}
